@@ -1,0 +1,35 @@
+第三方组件声明
+================
+
+本项目（requirement-workflow）是一个技能捆绑包（skill bundle），
+核心编排层（SKILL.md 及 scripts/）为原创作品，采用 AGPL-3.0 协议。
+
+本项目的 references/ 目录包含来自以下第三方项目的资料，
+它们保留各自的原始许可证，独立于本项目的整体 AGPL-3.0 授权。
+
+项目许可证清单见 references/licenses/ 目录。
+
+引用的第三方项目：
+-------------------
+
+| 项目 | 原作者 | 许可证 |
+|------|--------|--------|
+| agent-reach | Agent Eyes | MIT |
+| code-reviewer / awesome-skills | awesome-skills | MIT |
+| ponytail | DietrichGebert | MIT |
+| obra-superpowers / using-superpowers | Jesse Vincent | MIT |
+| mattpocock skills (grill-me, domain-modeling 等) | Matt Pocock | MIT |
+| testfx / Microsoft | Microsoft Corporation | MIT |
+| brainstorming | (见上游链接) | MIT |
+| nexus-mapper | (见上游链接) | MIT |
+| subagent-driven-development | (见上游链接) | MIT |
+| writing-plans, writing-skills | (见上游链接) | MIT |
+| code-testing-agent, code-testing-extensions | (见上游链接) | MIT |
+| requesting-code-review, verification-before-completion | (见上游链接) | MIT |
+| karpathy-guidelines | (见上游链接) | MIT |
+| dispatching-parallel-agents | (见上游链接) | MIT |
+| finishing-a-development-branch | (见上游链接) | MIT |
+| using-git-worktrees | (见上游链接) | MIT |
+| executing-plans | (见上游链接) | MIT |
+
+第三方许可证全文见 references/licenses/ 目录。

@@ -1,0 +1,271 @@
+﻿{
+  "schema_version": 1,
+  "synced_at": "2026-07-26T09:27:00+08:00",
+  "runtime_policy": {
+    "self_contained": true,
+    "external_skill_directories_allowed": false,
+    "upstream_metadata_is_runtime_dependency": false,
+    "missing_local_reference_behavior": "stop_with_bundle_integrity_error"
+  },
+  "reserved_local_paths": [
+    "DEPENDENCY-MAP.md",
+    "SOURCES.json"
+  ],
+  "runtime_entry_files": [
+    "brainstorming.md",
+    "writing-clearly-and-concisely.md",
+    "grill-me.md",
+    "grilling.md",
+    "grill-with-docs.md",
+    "domain-modeling.md",
+    "context-format.md",
+    "adr-format.md",
+    "agent-reach.md",
+    "nexus-mapper.md",
+    "writing-plans.md",
+    "executing-plans.md",
+    "using-git-worktrees.md",
+    "subagent-driven-development.md",
+    "requesting-code-review.md",
+    "test-driven-development.md",
+    "writing-good-tests.md",
+    "code-testing-agent.md",
+    "code-testing-extensions.md",
+    "ponytail.md",
+    "ponytail-review.md",
+    "karpathy-guidelines.md",
+    "dispatching-parallel-agents.md",
+    "code-reviewer.md",
+    "verification-before-completion.md",
+    "finishing-a-development-branch.md",
+    "writing-skills.md"
+  ],
+  "sources": [
+    {
+      "id": "obra-superpowers",
+      "repository": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "branch": "main",
+      "commit": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9",
+      "license": "MIT",
+      "source_tree_sha256": "5ea537e28151f6798bdb2b9946bf1dc8af4c2f1d3495318945fc2e588d741ec3",
+      "source_paths": [
+        "skills/brainstorming",
+        "skills/writing-plans",
+        "skills/executing-plans",
+        "skills/using-git-worktrees",
+        "skills/subagent-driven-development",
+        "skills/requesting-code-review",
+        "skills/test-driven-development",
+        "skills/dispatching-parallel-agents",
+        "skills/verification-before-completion",
+        "skills/finishing-a-development-branch",
+        "skills/writing-skills",
+        "skills/using-superpowers/references",
+        "LICENSE"
+      ],
+      "tracked_local_paths": [
+        "brainstorming.md",
+        "brainstorming/**",
+        "writing-plans.md",
+        "writing-plans/**",
+        "executing-plans.md",
+        "using-git-worktrees.md",
+        "subagent-driven-development.md",
+        "subagent-driven-development/**",
+        "requesting-code-review.md",
+        "requesting-code-review/**",
+        "test-driven-development.md",
+        "writing-good-tests.md",
+        "dispatching-parallel-agents.md",
+        "verification-before-completion.md",
+        "finishing-a-development-branch.md",
+        "writing-skills.md",
+        "writing-skills/**",
+        "using-superpowers-tools/**",
+        "licenses/obra-superpowers-LICENSE.txt"
+      ],
+      "local_adaptations": [
+        "将 superpowers: 技能调用改为读取本包根级引用文件",
+        "将伴随文件链接改为 references 内的本地相对路径",
+        "将子 agent 执行改为必须先取得用户授权"
+      ]
+    },
+    {
+      "id": "mattpocock-skills",
+      "repository": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "branch": "main",
+      "commit": "ed37663cc5fbef691ddfecd080dff42f7e7e350d",
+      "license": "MIT",
+      "source_tree_sha256": "d36d82ec738e6be1bf5d9d22f0392e4c5fa3d658147985ffbc519450ba3786c8",
+      "source_paths": [
+        "skills/productivity/grill-me",
+        "skills/productivity/grilling",
+        "skills/engineering/grill-with-docs",
+        "skills/engineering/domain-modeling",
+        "LICENSE"
+      ],
+      "tracked_local_paths": [
+        "grill-me.md",
+        "grilling.md",
+        "grill-with-docs.md",
+        "domain-modeling.md",
+        "context-format.md",
+        "adr-format.md",
+        "upstream-metadata/mattpocock/**",
+        "licenses/mattpocock-skills-LICENSE.txt"
+      ],
+      "local_adaptations": [
+        "将 /grilling 与 /domain-modeling 调用改为读取同目录本地文件",
+        "将 CONTEXT-FORMAT.md 与 ADR-FORMAT.md 链接改为根级本地文件",
+        "保留四个上游 agents/openai.yaml 作为非运行时维护元数据"
+      ]
+    },
+    {
+      "id": "agent-reach",
+      "repository": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "branch": "main",
+      "commit": "b4d52c46c9113cb0f653d6df4cf71ebadf4930ac",
+      "license": "MIT",
+      "source_tree_sha256": "52b7a601b0615843c51263297fb7703375929d4f669be92023364adbf67fccc1",
+      "source_paths": [
+        "agent_reach/skill",
+        "LICENSE"
+      ],
+      "tracked_local_paths": [
+        "agent-reach.md",
+        "agent-reach/**",
+        "licenses/agent-reach-LICENSE.txt"
+      ],
+      "local_adaptations": [
+        "将 references/*.md 链接改为 agent-reach/*.md"
+      ]
+    },
+    {
+      "id": "nexus-skills",
+      "repository": "Haaaiawd/Nexus-skills",
+      "url": "https://github.com/Haaaiawd/Nexus-skills",
+      "branch": "master",
+      "commit": "09d5601ea8be34a83b54b8d48e24f0b6700cf403",
+      "license": "NOASSERTION",
+      "source_tree_sha256": "8c418adf6f5798f2cb325fa07a42115e8b2f459c2e356acba430049c49ff6e39",
+      "source_paths": [
+        "skills/nexus-mapper"
+      ],
+      "tracked_local_paths": [
+        "nexus-mapper.md",
+        "nexus-mapper/**"
+      ],
+      "local_adaptations": [
+        "将脚本和参考文件路径改为本包内 nexus-mapper 子目录",
+        "移除对外部 skill 安装目录的运行时定位"
+      ]
+    },
+    {
+      "id": "ponytail",
+      "repository": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "branch": "main",
+      "commit": "16f29800fd2681bdf24f3eb4ccffe38be3baec6b",
+      "license": "MIT",
+      "source_tree_sha256": "610f0fbf5e5377cf59cf015cd7bb2770ebdf3adc44e21ad6095b3f2f1401b56c",
+      "source_paths": [
+        "skills/ponytail",
+        "skills/ponytail-review",
+        "LICENSE"
+      ],
+      "tracked_local_paths": [
+        "ponytail.md",
+        "ponytail-review.md",
+        "licenses/ponytail-LICENSE.txt"
+      ],
+      "local_adaptations": []
+    },
+    {
+      "id": "code-review-skill",
+      "repository": "awesome-skills/code-review-skill",
+      "url": "https://github.com/awesome-skills/code-review-skill",
+      "branch": "main",
+      "commit": "95c707b999295f6c8ee2d0d3d1c61cc0c2e1a52c",
+      "license": "MIT",
+      "source_tree_sha256": "0dff43eec57e71bf67f04b27c69450eef1ed91508a017fb52fbc64e81c19e22f",
+      "source_paths": [
+        "SKILL.md",
+        "assets",
+        "reference",
+        "scripts",
+        "LICENSE"
+      ],
+      "tracked_local_paths": [
+        "code-reviewer.md",
+        "code-reviewer/**",
+        "licenses/code-review-skill-LICENSE.txt"
+      ],
+      "local_adaptations": [
+        "将 reference、assets 和 scripts 链接改为 code-reviewer 子目录"
+      ]
+    },
+    {
+      "id": "microsoft-testfx",
+      "repository": "microsoft/testfx",
+      "url": "https://github.com/microsoft/testfx",
+      "branch": "main",
+      "commit": "81f5fb81acf8a6f6354d10deecb7c1ebd50756ce",
+      "license": "MIT",
+      "source_tree_sha256": "0eec16f03422879c862eef1f164503ae5c21bb93fb2f3ff9317c7f91a1fa6d82",
+      "source_paths": [
+        ".agents/skills/code-testing-agent",
+        ".agents/skills/code-testing-extensions",
+        "LICENSE"
+      ],
+      "tracked_local_paths": [
+        "code-testing-agent.md",
+        "code-testing-agent/**",
+        "code-testing-extensions.md",
+        "code-testing-extensions/**",
+        "licenses/testfx-LICENSE.txt"
+      ],
+      "local_adaptations": [
+        "将 code-testing-extensions skill 调用改为读取本地引用及语言扩展",
+        "将 unit-test-generation.prompt.md 链接改为本地子目录"
+      ]
+    },
+    {
+      "id": "karpathy-skills",
+      "repository": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "branch": "main",
+      "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "license": "MIT declared in SKILL.md; no repository root license file detected",
+      "source_tree_sha256": "222be4ec7939f9a99de953356971fa7f44ab1a703decad8b1f67d55c2dada952",
+      "source_paths": [
+        "skills/karpathy-guidelines"
+      ],
+      "tracked_local_paths": [
+        "karpathy-guidelines.md"
+      ],
+      "local_adaptations": []
+    },
+    {
+      "id": "elements-of-style",
+      "repository": "obra/the-elements-of-style",
+      "url": "https://github.com/obra/the-elements-of-style",
+      "branch": "main",
+      "commit": "6099c505c2a8eb066f3777f83a97d9d828f7954c",
+      "license": "Public-domain source text; no repository root license file detected",
+      "source_tree_sha256": "20aa1cbba26b734aec9443eda62934fe1d5636bf19ff03071188c4a7433ab735",
+      "source_paths": [
+        "skills/writing-clearly-and-concisely"
+      ],
+      "tracked_local_paths": [
+        "writing-clearly-and-concisely.md",
+        "writing-clearly-and-concisely/**"
+      ],
+      "local_adaptations": [
+        "将 elements-of-style.md 路径改为本包内子目录"
+      ]
+    }
+  ]
+}
