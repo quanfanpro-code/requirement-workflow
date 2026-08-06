@@ -1,4 +1,4 @@
-# 📋 需求先行六阶段开发工作流（完整版）
+﻿# 📋 需求先行六阶段开发工作流（完整版）
 
 > 一个帮你把开发任务做稳做牢的工作流工具。  
 > 专门治「需求没想清楚就写代码」这个毛病。
@@ -109,6 +109,12 @@
 - 只写最少量的代码让测试通过，不提前写「未来可能会用到」的代码
 - 测试至少要覆盖：正常情况、边界情况、出错情况
 
+**遇到真正难查的 bug 怎么办**：
+- 普通的测试失败不算难查，它本来就是 TDD 的正常红灯，继续按红、绿、整理、验证推进
+- 如果问题跨环境才出现、现有证据解释不了，而且一次针对性修复后仍复现，工作流会自动进入 `diagnosing-bugs` 诊断分支
+- 这个分支会先稳定复现、列出可验证的原因假设、逐项取证，再修共同根因；修完后回到原来的 TDD 验证步骤
+- `diagnosing-bugs` 的正文、脚本模板和来源记录已经完整放在本项目里，使用时不需要另外安装，也不会读取电脑上别的 skills 目录
+
 **产出**：可以运行的代码 + 配套的自动化测试 ✅
 
 ---
@@ -208,6 +214,7 @@
 - agent-reach（网上搜索调研工具）
 - code-reviewer（代码审查指南）
 - ponytail（写最简代码的方法论）
+- diagnosing-bugs（复杂故障的假设、取证与稳定复现方法）
 - 以及更多（详见 NOTICE 文件）
 
 MIT 协议简单说：你可以随便用，只要保留原作者的版权声明就行。
@@ -235,9 +242,16 @@ requirement-workflow/
 │   ├── brainstorming.md  ← 需求头脑风暴方法
 │   ├── grill-me.md       ← 严苛追问方法
 │   ├── grilling.md       ← 深入追问方法
+│   ├── diagnosing-bugs.md← 复杂故障诊断方法
 │   ├── writing-plans.md  ← 怎么做实施计划
 │   └── ...更多
 ├── NOTICE                ← 第三方项目版权声明
 ├── LICENSE               ← AGPL-3.0 协议全文
 └── README.md             ← 就是这个文件
 ```
+
+## 🔄 怎么检查 diagnosing-bugs 有没有新版本
+
+维护时运行 `python scripts/check_upstream.py`。脚本会把 `diagnosing-bugs` 作为独立来源检查，因此以后只升级这一个子技能时，不会顺带改动同仓库里的 grill-me、domain-modeling 等内容。
+
+它的仓库地址、分支、固定提交号、来源目录、快照校验值、本地文件清单和适配说明，都记录在 `references/SOURCES.json`；本地依赖关系记录在 `references/DEPENDENCY-MAP.md`。升级后再运行 `python scripts/validate_bundle.py` 和集成测试，就能确认自包含关系没有断。

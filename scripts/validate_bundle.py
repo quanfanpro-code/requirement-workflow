@@ -238,6 +238,10 @@ def check_orchestrator_policy() -> list[str]:
         "references/domain-modeling.md",
         "references/context-format.md",
         "references/adr-format.md",
+        "references/diagnosing-bugs.md",
+        "无法由当前证据立即解释",
+        "正常的 TDD 红灯",
+        "回到当前 TDD 任务的 VERIFY",
         "不得提交、推送、创建 PR、合并、删除分支",
     )
     for literal in required_literals:

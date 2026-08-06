@@ -1,3 +1,8 @@
+---
+name: requirement-workflow
+description: 需求先行的六阶段完整开发工作流。用户手动调用后，必须按需求澄清、方案设计、实施计划、TDD 编码执行、验收审查、交付完成依次推进；适用于需要完整需求与设计过程的开发任务。所有流程规则、严苛追问、领域建模、计划、测试、审查和交付指引均内置在本技能的 references/ 中，运行时不依赖其他技能目录。
+---
+
 <!--
   requirement-workflow — 需求先行六阶段开发工作流
   Copyright (C) 2026 quanfanpro-code
@@ -9,17 +14,13 @@
   本项目的 references/ 目录包含来自第三方 MIT 项目的资料,
   它们保留各自的原始许可证(详见 NOTICE 和 references/licenses/)。
 -->
----
-name: requirement-workflow
-description: 需求先行的六阶段完整开发工作流。用户手动调用后，必须按需求澄清、方案设计、实施计划、TDD 编码执行、验收审查、交付完成依次推进；适用于需要完整需求与设计过程的开发任务。所有流程规则、严苛追问、领域建模、计划、测试、审查和交付指引均内置在本技能的 references/ 中，运行时不依赖其他技能目录。
----
 
 # Requirement Workflow
 
 ## 执行契约
 
 1. 用户调用本技能，即表示已决定走完整六阶段流程。不要判断任务轻重，不要绕过任何阶段。
-2. 运行时只读取本技能目录内的 `SKILL.md`、`references/` 和 `scripts/`。不得读取 `.agents/skills`、`.codex/skills`、其他 WorkBuddy 技能目录或在线技能正文。
+2. 运行时只读取本技能目录内的 `SKILL.md`、`references/` 和 `scripts/`。不得读取 `.agents/skills`、`.codex/skills`等技能目录或在线技能正文。
 3. 上游仓库、提交号和本机来源路径仅供维护更新，记录在 `references/SOURCES.json`；它们不是运行时依赖。
 4. 每次进入一个阶段前，完整读取该阶段列出的本地文件。不要凭记忆复述规则。
 5. 本地引用缺失、损坏或校验失败时，停止流程并报告“技能包完整性错误”。不要静默改用外部 skill，也不要用简化问题集冒充原流程。
@@ -169,6 +170,18 @@ description: 需求先行的六阶段完整开发工作流。用户手动调用�
 
 根据项目语言读取 `references/code-testing-extensions/extensions/` 下的对应文件。需要并行且已获用户授权时，再读取 `references/dispatching-parallel-agents.md`。
 
+### 复杂故障诊断分支
+
+正常的 TDD 红灯是预期反馈，**不触发**复杂故障诊断。简单错别字、明显缺少配置，以及需求或设计本身无效的情况同样不触发；分别按当前任务直接修正，或回退到对应需求、设计阶段。
+
+只有同时满足以下条件时，才完整读取并执行 `references/diagnosing-bugs.md`：
+
+1. 失败现象无法由当前证据立即解释，且需要提出多个可证伪假设；
+2. 已完成一次针对性修复后仍复现，或故障只在跨环境、并发、性能、时序等条件下出现；
+3. 继续盲改的风险高于先建立稳定复现与证据链。
+
+诊断时可按上游指引使用本地模板 `references/diagnosing-bugs/scripts/hitl-loop.template.sh`，但不得把它当作必须执行的固定脚本。查明根因并完成针对性修复后，回到当前 TDD 任务的 VERIFY，运行定向测试和受影响范围验证，再继续原任务清单。
+
 ### 每个任务的循环
 
 1. **RED**：先写一个能证明目标行为且会因缺少实现而失败的测试，运行并确认失败原因正确。
@@ -193,6 +206,8 @@ description: 需求先行的六阶段完整开发工作流。用户手动调用�
 3. `references/verification-before-completion.md`
 
 从 `references/code-reviewer/reference/` 读取与项目语言、架构、安全和性能相关的指南。只有用户授权独立 reviewer 时，才读取并执行 `references/requesting-code-review.md`。
+
+若验收复现出阶段 4 遗留的复杂故障，并且符合“无法由当前证据立即解释、一次针对性修复后仍复现”等触发条件，完整读取 `references/diagnosing-bugs.md`，回到阶段 4 建立诊断闭环；修复后回到当前 TDD 任务的 VERIFY，再重新执行本阶段审查。正常验收失败若原因明确，则直接按 TDD 修复，不触发该分支。
 
 ### 执行
 

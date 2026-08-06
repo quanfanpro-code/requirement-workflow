@@ -40,6 +40,7 @@
 |---|---|---|
 | `test-driven-development.md` | `writing-good-tests.md` | RED、GREEN、REFACTOR 与高质量测试规则 |
 | `writing-good-tests.md` | `writing-skills.md`、`writing-skills/` | 测试行为而不是实现细节；文档型 skill 的测试方法 |
+| `diagnosing-bugs.md` | `diagnosing-bugs/scripts/hitl-loop.template.sh` | 仅在难以解释、针对性修复后仍复现的复杂故障中建立假设、取证和复现闭环；完成后返回当前 TDD 任务的 VERIFY |
 | `ponytail.md` | 无 | 优先复用和最小实现 |
 | `karpathy-guidelines.md` | 无 | 显式假设、外科式修改、可验证目标 |
 | `code-testing-agent.md` | `code-testing-agent/`、`code-testing-extensions.md`、`code-testing-extensions/extensions/` | 测试调研、计划、实现和语言适配 |
@@ -53,6 +54,7 @@
 | `ponytail-review.md` | 无 | 过度工程专项审查 |
 | `requesting-code-review.md` | `requesting-code-review/code-reviewer-prompt.md` | 用户授权时进行独立审查 |
 | `verification-before-completion.md` | 无 | 用新鲜证据约束完成声明 |
+| `diagnosing-bugs.md` | `diagnosing-bugs/scripts/hitl-loop.template.sh` | 验收复现出阶段 4 未解决的复杂故障时回到诊断闭环；完成后返回阶段 4 的 VERIFY |
 
 ## 阶段 6：交付完成
 
@@ -67,6 +69,7 @@
 |---|---|---|
 | `obra/superpowers` | `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | brainstorming、计划、TDD、并行、审查、验证和收尾 |
 | `mattpocock/skills` | `ed37663cc5fbef691ddfecd080dff42f7e7e350d` | grill-me、grilling、grill-with-docs、domain-modeling 和格式 |
+| `mattpocock/skills`（diagnosing-bugs 独立快照） | `6acc160e4e0cd062dbbbd7a1b26ae92855edf07e` | diagnosing-bugs 正文、HITL 循环脚本模板和上游界面元数据 |
 | `Panniantong/Agent-Reach` | `b4d52c46c9113cb0f653d6df4cf71ebadf4930ac` | 调研路由和六类详细参考 |
 | `Haaaiawd/Nexus-skills` | `09d5601ea8be34a83b54b8d48e24f0b6700cf403` | nexus-mapper 正文、协议、Schema 和脚本 |
 | `DietrichGebert/ponytail` | `16f29800fd2681bdf24f3eb4ccffe38be3baec6b` | ponytail 与 ponytail-review |

@@ -1,6 +1,6 @@
 ﻿{
   "schema_version": 1,
-  "synced_at": "2026-07-26T09:27:00+08:00",
+  "synced_at": "2026-08-06T22:45:00+08:00",
   "runtime_policy": {
     "self_contained": true,
     "external_skill_directories_allowed": false,
@@ -29,6 +29,7 @@
     "requesting-code-review.md",
     "test-driven-development.md",
     "writing-good-tests.md",
+    "diagnosing-bugs.md",
     "code-testing-agent.md",
     "code-testing-extensions.md",
     "ponytail.md",
@@ -113,13 +114,40 @@
         "domain-modeling.md",
         "context-format.md",
         "adr-format.md",
-        "upstream-metadata/mattpocock/**",
+        "upstream-metadata/mattpocock/domain-modeling/**",
+        "upstream-metadata/mattpocock/grill-me/**",
+        "upstream-metadata/mattpocock/grill-with-docs/**",
+        "upstream-metadata/mattpocock/grilling/**",
         "licenses/mattpocock-skills-LICENSE.txt"
       ],
       "local_adaptations": [
         "将 /grilling 与 /domain-modeling 调用改为读取同目录本地文件",
         "将 CONTEXT-FORMAT.md 与 ADR-FORMAT.md 链接改为根级本地文件",
         "保留四个上游 agents/openai.yaml 作为非运行时维护元数据"
+      ]
+    },
+    {
+      "id": "mattpocock-diagnosing-bugs",
+      "repository": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "branch": "main",
+      "commit": "6acc160e4e0cd062dbbbd7a1b26ae92855edf07e",
+      "license": "MIT",
+      "source_tree_sha256": "dff8cc167215259536e5a1828d772e2125c28a1886c9eb3ab826c4312a87a6dd",
+      "source_paths": [
+        "skills/engineering/diagnosing-bugs",
+        "LICENSE"
+      ],
+      "tracked_local_paths": [
+        "diagnosing-bugs.md",
+        "diagnosing-bugs/**",
+        "upstream-metadata/mattpocock/diagnosing-bugs/**",
+        "licenses/mattpocock-skills-LICENSE.txt"
+      ],
+      "local_adaptations": [
+        "保留上游正文、脚本模板和 agents/openai.yaml 的完整本地快照",
+        "由 requirement-workflow 在阶段 4 和阶段 5 按严格触发边界读取",
+        "诊断结束后回到当前 TDD 任务的 VERIFY，不形成独立交付流程"
       ]
     },
     {

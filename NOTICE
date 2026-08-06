@@ -1,4 +1,4 @@
-第三方组件声明
+﻿第三方组件声明
 ================
 
 本项目（requirement-workflow）是一个技能捆绑包（skill bundle），
@@ -18,7 +18,7 @@
 | code-reviewer / awesome-skills | awesome-skills | MIT |
 | ponytail | DietrichGebert | MIT |
 | obra-superpowers / using-superpowers | Jesse Vincent | MIT |
-| mattpocock skills (grill-me, domain-modeling 等) | Matt Pocock | MIT |
+| mattpocock skills (grill-me、domain-modeling、diagnosing-bugs 等) | Matt Pocock | MIT |
 | testfx / Microsoft | Microsoft Corporation | MIT |
 | brainstorming | (见上游链接) | MIT |
 | nexus-mapper | (见上游链接) | MIT |
