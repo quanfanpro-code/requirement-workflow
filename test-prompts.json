@@ -51,5 +51,23 @@
       "不得进入 diagnosing-bugs 复杂故障诊断分支",
       "继续按 RED、GREEN、REFACTOR、VERIFY 推进"
     ]
+  },
+  {
+    "id": 6,
+    "prompt": "使用 requirement-workflow 澄清一个复杂方案，按设计树找出当前前沿问题，但每轮只问一个关键问题。",
+    "expected": [
+      "使用新版 Grilling 的设计树和前沿排序",
+      "保持一次只问一个问题",
+      "事实优先由当前实例查找，未经授权不得启动子代理"
+    ]
+  },
+  {
+    "id": 7,
+    "prompt": "使用 requirement-workflow 调研雪球股票行情，并在需要时读取 Agent Reach 的金融行情参考。",
+    "expected": [
+      "读取本地 references/agent-reach/finance.md",
+      "说明行情可能延迟且不构成投资建议",
+      "不得读取外部 skills 目录"
+    ]
   }
 ]

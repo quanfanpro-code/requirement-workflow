@@ -1,4 +1,4 @@
----
+﻿---
 name: requirement-workflow
 description: 需求先行的六阶段完整开发工作流。用户手动调用后，必须按需求澄清、方案设计、实施计划、TDD 编码执行、验收审查、交付完成依次推进；适用于需要完整需求与设计过程的开发任务。所有流程规则、严苛追问、领域建模、计划、测试、审查和交付指引均内置在本技能的 references/ 中，运行时不依赖其他技能目录。
 ---
@@ -165,10 +165,8 @@ description: 需求先行的六阶段完整开发工作流。用户手动调用�
 2. `references/writing-good-tests.md`
 3. `references/ponytail.md`
 4. `references/karpathy-guidelines.md`
-5. `references/code-testing-agent.md`
-6. `references/code-testing-extensions.md`
 
-根据项目语言读取 `references/code-testing-extensions/extensions/` 下的对应文件。需要并行且已获用户授权时，再读取 `references/dispatching-parallel-agents.md`。
+需要并行且已获用户授权时，再读取 `references/dispatching-parallel-agents.md`。
 
 ### 复杂故障诊断分支
 

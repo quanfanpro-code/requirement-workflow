@@ -1,6 +1,6 @@
 ﻿{
   "schema_version": 1,
-  "synced_at": "2026-08-06T22:45:00+08:00",
+  "synced_at": "2026-08-06T23:09:51+08:00",
   "runtime_policy": {
     "self_contained": true,
     "external_skill_directories_allowed": false,
@@ -30,8 +30,6 @@
     "test-driven-development.md",
     "writing-good-tests.md",
     "diagnosing-bugs.md",
-    "code-testing-agent.md",
-    "code-testing-extensions.md",
     "ponytail.md",
     "ponytail-review.md",
     "karpathy-guidelines.md",
@@ -47,9 +45,9 @@
       "repository": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
       "branch": "main",
-      "commit": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9",
+      "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
       "license": "MIT",
-      "source_tree_sha256": "5ea537e28151f6798bdb2b9946bf1dc8af4c2f1d3495318945fc2e588d741ec3",
+      "source_tree_sha256": "4be45bea8eac905ff83de80583aff8e8339cba865e50410ce37ee65828e7c234",
       "source_paths": [
         "skills/brainstorming",
         "skills/writing-plans",
@@ -97,9 +95,9 @@
       "repository": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
       "branch": "main",
-      "commit": "ed37663cc5fbef691ddfecd080dff42f7e7e350d",
+      "commit": "6acc160e4e0cd062dbbbd7a1b26ae92855edf07e",
       "license": "MIT",
-      "source_tree_sha256": "d36d82ec738e6be1bf5d9d22f0392e4c5fa3d658147985ffbc519450ba3786c8",
+      "source_tree_sha256": "bad07f3098f09854b822c5c38020c9eada76897910ee198ca8a311937cd905ea",
       "source_paths": [
         "skills/productivity/grill-me",
         "skills/productivity/grilling",
@@ -123,7 +121,9 @@
       "local_adaptations": [
         "将 /grilling 与 /domain-modeling 调用改为读取同目录本地文件",
         "将 CONTEXT-FORMAT.md 与 ADR-FORMAT.md 链接改为根级本地文件",
-        "保留四个上游 agents/openai.yaml 作为非运行时维护元数据"
+        "保留四个上游 agents/openai.yaml 作为非运行时维护元数据",
+        "吸收新版设计树和前沿排序，但适配为每次只问一个关键问题",
+        "事实由当前实例优先使用工具核验，子代理必须先获用户明确授权"
       ]
     },
     {
@@ -155,9 +155,9 @@
       "repository": "Panniantong/Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "branch": "main",
-      "commit": "b4d52c46c9113cb0f653d6df4cf71ebadf4930ac",
+      "commit": "1221ecd0c3e0502ee37406f03543bedf7503f2c7",
       "license": "MIT",
-      "source_tree_sha256": "52b7a601b0615843c51263297fb7703375929d4f669be92023364adbf67fccc1",
+      "source_tree_sha256": "ddf84ced300ffac533076b063e0bac3f3e48ccad4c089795ea29164d92aecee5",
       "source_paths": [
         "agent_reach/skill",
         "LICENSE"
@@ -168,7 +168,9 @@
         "licenses/agent-reach-LICENSE.txt"
       ],
       "local_adaptations": [
-        "将 references/*.md 链接改为 agent-reach/*.md"
+        "将 references/*.md 链接改为 agent-reach/*.md",
+        "保留中文运行时入口，不内置上游 SKILL_en.md",
+        "保留金融行情的登录态、延迟、不构成投资建议和非空内容验收边界"
       ]
     },
     {
@@ -233,31 +235,6 @@
       ],
       "local_adaptations": [
         "将 reference、assets 和 scripts 链接改为 code-reviewer 子目录"
-      ]
-    },
-    {
-      "id": "microsoft-testfx",
-      "repository": "microsoft/testfx",
-      "url": "https://github.com/microsoft/testfx",
-      "branch": "main",
-      "commit": "81f5fb81acf8a6f6354d10deecb7c1ebd50756ce",
-      "license": "MIT",
-      "source_tree_sha256": "0eec16f03422879c862eef1f164503ae5c21bb93fb2f3ff9317c7f91a1fa6d82",
-      "source_paths": [
-        ".agents/skills/code-testing-agent",
-        ".agents/skills/code-testing-extensions",
-        "LICENSE"
-      ],
-      "tracked_local_paths": [
-        "code-testing-agent.md",
-        "code-testing-agent/**",
-        "code-testing-extensions.md",
-        "code-testing-extensions/**",
-        "licenses/testfx-LICENSE.txt"
-      ],
-      "local_adaptations": [
-        "将 code-testing-extensions skill 调用改为读取本地引用及语言扩展",
-        "将 unit-test-generation.prompt.md 链接改为本地子目录"
       ]
     },
     {

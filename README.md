@@ -243,6 +243,7 @@ requirement-workflow/
 │   ├── grill-me.md       ← 严苛追问方法
 │   ├── grilling.md       ← 深入追问方法
 │   ├── diagnosing-bugs.md← 复杂故障诊断方法
+│   ├── agent-reach/      ← 搜索、社交、网页、视频和金融行情参考
 │   ├── writing-plans.md  ← 怎么做实施计划
 │   └── ...更多
 ├── NOTICE                ← 第三方项目版权声明
@@ -250,8 +251,14 @@ requirement-workflow/
 └── README.md             ← 就是这个文件
 ```
 
-## 🔄 怎么检查 diagnosing-bugs 有没有新版本
+## 🔄 怎么检查上游来源有没有新版本
 
-维护时运行 `python scripts/check_upstream.py`。脚本会把 `diagnosing-bugs` 作为独立来源检查，因此以后只升级这一个子技能时，不会顺带改动同仓库里的 grill-me、domain-modeling 等内容。
+维护时运行 `python scripts/check_upstream.py`。脚本会按 `references/SOURCES.json` 中的独立来源逐项检查；本地只保留已经登记的来源，不会读取电脑上其他 skills 目录。
 
-它的仓库地址、分支、固定提交号、来源目录、快照校验值、本地文件清单和适配说明，都记录在 `references/SOURCES.json`；本地依赖关系记录在 `references/DEPENDENCY-MAP.md`。升级后再运行 `python scripts/validate_bundle.py` 和集成测试，就能确认自包含关系没有断。
+仓库地址、分支、固定提交号、来源目录、快照校验值、本地文件清单和适配说明，都记录在 `references/SOURCES.json`；本地依赖关系记录在 `references/DEPENDENCY-MAP.md`。升级后再运行 `python scripts/validate_bundle.py` 和集成测试，就能确认自包含关系没有断。
+
+### 2026-08-06 维护记录
+
+- 更新 `obra-superpowers`、`mattpocock-skills` 和 `agent-reach` 三个来源；其中 Agent Reach 新增雪球/股票行情参考 `agent-reach/finance.md`。
+- 移除 `microsoft-testfx` 来源及其 21 个本地文件。阶段 4 继续使用 TDD、高质量测试、Ponytail 和 Karpathy 规则，不再加载一个额外的多 Agent 测试生成流程。
+- `mattpocock-skills` 的新版 Grilling 已吸收设计树和前沿排序，但本工作流仍一次只问一个关键问题，子代理仍须用户明确授权。

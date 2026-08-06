@@ -15,7 +15,7 @@
 | `brainstorming.md` | `brainstorming/spec-document-reviewer-prompt.md`、`brainstorming/visual-companion.md`、`brainstorming/scripts/` | 探索上下文、逐项澄清、形成需求与设计输入 |
 | `writing-clearly-and-concisely.md` | `writing-clearly-and-concisely/elements-of-style.md` | 改善面向用户文档的表达 |
 | `grill-me.md` | `grilling.md` | 对需求和初步方案执行完整严苛追问 |
-| `agent-reach.md` | `agent-reach/search.md`、`social.md`、`career.md`、`dev.md`、`web.md`、`video.md` | 需要最新外部证据时进行实时调研 |
+| `agent-reach.md` | `agent-reach/search.md`、`social.md`、`career.md`、`dev.md`、`web.md`、`video.md`、`finance.md` | 需要最新外部证据时进行实时调研 |
 
 ## 阶段 2：方案设计
 
@@ -43,7 +43,6 @@
 | `diagnosing-bugs.md` | `diagnosing-bugs/scripts/hitl-loop.template.sh` | 仅在难以解释、针对性修复后仍复现的复杂故障中建立假设、取证和复现闭环；完成后返回当前 TDD 任务的 VERIFY |
 | `ponytail.md` | 无 | 优先复用和最小实现 |
 | `karpathy-guidelines.md` | 无 | 显式假设、外科式修改、可验证目标 |
-| `code-testing-agent.md` | `code-testing-agent/`、`code-testing-extensions.md`、`code-testing-extensions/extensions/` | 测试调研、计划、实现和语言适配 |
 | `dispatching-parallel-agents.md` | 无 | 仅在用户授权且任务独立时并行 |
 
 ## 阶段 5：验收审查
@@ -67,13 +66,12 @@
 
 | 来源 | 固定提交 | 本地内容 |
 |---|---|---|
-| `obra/superpowers` | `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | brainstorming、计划、TDD、并行、审查、验证和收尾 |
-| `mattpocock/skills` | `ed37663cc5fbef691ddfecd080dff42f7e7e350d` | grill-me、grilling、grill-with-docs、domain-modeling 和格式 |
+| `obra/superpowers` | `44c9b2d6e889982ac18c27d05a19fefe335194e1` | brainstorming、计划、TDD、并行、审查、验证和收尾 |
+| `mattpocock/skills` | `6acc160e4e0cd062dbbbd7a1b26ae92855edf07e` | grill-me、grilling、grill-with-docs、domain-modeling 和格式 |
 | `mattpocock/skills`（diagnosing-bugs 独立快照） | `6acc160e4e0cd062dbbbd7a1b26ae92855edf07e` | diagnosing-bugs 正文、HITL 循环脚本模板和上游界面元数据 |
-| `Panniantong/Agent-Reach` | `b4d52c46c9113cb0f653d6df4cf71ebadf4930ac` | 调研路由和六类详细参考 |
+| `Panniantong/Agent-Reach` | `1221ecd0c3e0502ee37406f03543bedf7503f2c7` | 调研路由、七类详细参考和金融行情边界 |
 | `Haaaiawd/Nexus-skills` | `09d5601ea8be34a83b54b8d48e24f0b6700cf403` | nexus-mapper 正文、协议、Schema 和脚本 |
 | `DietrichGebert/ponytail` | `16f29800fd2681bdf24f3eb4ccffe38be3baec6b` | ponytail 与 ponytail-review |
 | `awesome-skills/code-review-skill` | `95c707b999295f6c8ee2d0d3d1c61cc0c2e1a52c` | 完整代码审查入口、语言指南、资产和脚本 |
-| `microsoft/testfx` | `81f5fb81acf8a6f6354d10deecb7c1ebd50756ce` | code-testing-agent 与全部语言扩展 |
 | `multica-ai/andrej-karpathy-skills` | `2c606141936f1eeef17fa3043a72095b4765b9c2` | karpathy-guidelines |
 | `obra/the-elements-of-style` | `6099c505c2a8eb066f3777f83a97d9d828f7954c` | writing-clearly-and-concisely 与完整写作参考 |
