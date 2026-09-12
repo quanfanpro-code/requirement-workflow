@@ -1,6 +1,6 @@
 ﻿{
   "schema_version": 1,
-  "synced_at": "2026-08-06T23:09:51+08:00",
+  "synced_at": "2026-09-04T20:45:00+08:00",
   "runtime_policy": {
     "self_contained": true,
     "external_skill_directories_allowed": false,
@@ -45,9 +45,9 @@
       "repository": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
       "branch": "main",
-      "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+      "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
       "license": "MIT",
-      "source_tree_sha256": "4be45bea8eac905ff83de80583aff8e8339cba865e50410ce37ee65828e7c234",
+      "source_tree_sha256": "4d0163566c2e1796b1d4d4089eadc4921500df7734a73e237b6ba9708abd95df",
       "source_paths": [
         "skills/brainstorming",
         "skills/writing-plans",
@@ -87,7 +87,8 @@
       "local_adaptations": [
         "将 superpowers: 技能调用改为读取本包根级引用文件",
         "将伴随文件链接改为 references 内的本地相对路径",
-        "将子 agent 执行改为必须先取得用户授权"
+        "将子 agent 执行改为必须先取得用户授权",
+        "requirement-workflow 固定采用 Architectural 路径，不允许用 Spike 或 Bounded 缩减六阶段流程"
       ]
     },
     {
@@ -95,9 +96,9 @@
       "repository": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
       "branch": "main",
-      "commit": "6acc160e4e0cd062dbbbd7a1b26ae92855edf07e",
+      "commit": "3cca18b368ae95cdbdebbff572ccafa662551015",
       "license": "MIT",
-      "source_tree_sha256": "bad07f3098f09854b822c5c38020c9eada76897910ee198ca8a311937cd905ea",
+      "source_tree_sha256": "e14525bd498884d5cb03326c506766409378cd02b02010a316e3fd787197c0f8",
       "source_paths": [
         "skills/productivity/grill-me",
         "skills/productivity/grilling",
@@ -131,9 +132,9 @@
       "repository": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
       "branch": "main",
-      "commit": "6acc160e4e0cd062dbbbd7a1b26ae92855edf07e",
+      "commit": "3cca18b368ae95cdbdebbff572ccafa662551015",
       "license": "MIT",
-      "source_tree_sha256": "dff8cc167215259536e5a1828d772e2125c28a1886c9eb3ab826c4312a87a6dd",
+      "source_tree_sha256": "027e36c2965c5f18b441308b2fc08fec0f702cb48297f9603342d9ae65c99de3",
       "source_paths": [
         "skills/engineering/diagnosing-bugs",
         "LICENSE"
@@ -155,9 +156,9 @@
       "repository": "Panniantong/Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "branch": "main",
-      "commit": "1221ecd0c3e0502ee37406f03543bedf7503f2c7",
+      "commit": "da5044d26fc6adddb6554d5679c94ac22e76e428",
       "license": "MIT",
-      "source_tree_sha256": "ddf84ced300ffac533076b063e0bac3f3e48ccad4c089795ea29164d92aecee5",
+      "source_tree_sha256": "515c6a093fedb0bc6692eabc52a5f97b3bf8b3a9f8e482c840b98dd4a05b3287",
       "source_paths": [
         "agent_reach/skill",
         "LICENSE"
@@ -198,9 +199,9 @@
       "repository": "DietrichGebert/ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
       "branch": "main",
-      "commit": "16f29800fd2681bdf24f3eb4ccffe38be3baec6b",
+      "commit": "2ed6c52c9d7e5e56942508591085fd45dea277d3",
       "license": "MIT",
-      "source_tree_sha256": "610f0fbf5e5377cf59cf015cd7bb2770ebdf3adc44e21ad6095b3f2f1401b56c",
+      "source_tree_sha256": "133bda96293ae6b76ed882a9ecc0d670766bf64b0457db2bc8dfe545d25e46fd",
       "source_paths": [
         "skills/ponytail",
         "skills/ponytail-review",
@@ -218,9 +219,9 @@
       "repository": "awesome-skills/code-review-skill",
       "url": "https://github.com/awesome-skills/code-review-skill",
       "branch": "main",
-      "commit": "95c707b999295f6c8ee2d0d3d1c61cc0c2e1a52c",
+      "commit": "277f4793018448eb08289bd54ab3c0e241a02b7b",
       "license": "MIT",
-      "source_tree_sha256": "0dff43eec57e71bf67f04b27c69450eef1ed91508a017fb52fbc64e81c19e22f",
+      "source_tree_sha256": "81e5f64b275bfb0441473a706bcc7ea91d172939afbcac6e93e0394fc011c004",
       "source_paths": [
         "SKILL.md",
         "assets",
@@ -258,9 +259,9 @@
       "repository": "obra/the-elements-of-style",
       "url": "https://github.com/obra/the-elements-of-style",
       "branch": "main",
-      "commit": "6099c505c2a8eb066f3777f83a97d9d828f7954c",
+      "commit": "05fc4f0d2b97b7c042dd9949ad658568e4a1324e",
       "license": "Public-domain source text; no repository root license file detected",
-      "source_tree_sha256": "20aa1cbba26b734aec9443eda62934fe1d5636bf19ff03071188c4a7433ab735",
+      "source_tree_sha256": "2d8f25a865227675f007f8d72c875cba800e95924b6569dba5c44342b4d797ad",
       "source_paths": [
         "skills/writing-clearly-and-concisely"
       ],

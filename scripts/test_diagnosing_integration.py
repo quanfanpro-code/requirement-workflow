@@ -52,11 +52,11 @@ class DiagnosingIntegrationTests(unittest.TestCase):
         self.assertEqual(source["repository"], "mattpocock/skills")
         self.assertEqual(source["branch"], "main")
         self.assertEqual(
-            source["commit"], "6acc160e4e0cd062dbbbd7a1b26ae92855edf07e"
+            source["commit"], "3cca18b368ae95cdbdebbff572ccafa662551015"
         )
         self.assertEqual(
             source["source_tree_sha256"],
-            "dff8cc167215259536e5a1828d772e2125c28a1886c9eb3ab826c4312a87a6dd",
+            "027e36c2965c5f18b441308b2fc08fec0f702cb48297f9603342d9ae65c99de3",
         )
         self.assertIn("skills/engineering/diagnosing-bugs", source["source_paths"])
         self.assertIn("diagnosing-bugs.md", source["tracked_local_paths"])

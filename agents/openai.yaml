@@ -7,4 +7,4 @@ interface:
   short_description: "按六阶段完成需求、设计、计划、TDD、审查与交付"
   default_prompt: "使用 $requirement-workflow 按完整六阶段流程处理这个开发任务。"
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

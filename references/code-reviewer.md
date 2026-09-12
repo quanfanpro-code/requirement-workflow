@@ -3,7 +3,7 @@ name: code-review-skill
 description: |
   Provides comprehensive code review guidance for React 19, Vue 3, Angular 17+, Svelte 5,
   Rust, TypeScript, Java, Java 8, PHP, Ruby, Rails, Python, Django, FastAPI, Go, C#/.NET, Kotlin, Swift,
-  NestJS, C/C++, Zig, CSS/Less/Sass, Qt, and more.
+  Dart, Flutter, NestJS, C/C++, Zig, CSS/Less/Sass, Qt, and more.
   Covers architecture review, performance review, security audit, code quality anti-patterns,
   and common bugs across all ecosystems.
   Use when: reviewing pull requests, conducting PR reviews, code review, reviewing code changes,
@@ -102,7 +102,7 @@ Before diving into code, understand:
 4. Understand the business requirement
 5. Note any relevant architectural decisions
 
-> For large diffs, pipe the diff through [`code-reviewer/scripts/pr-analyzer.py`](code-reviewer/scripts/pr-analyzer.py) (`git diff main...HEAD | python references/code-reviewer/scripts/pr-analyzer.py`) to triage complexity and get a suggested review approach before reading.
+> For large diffs, pipe the diff through [`scripts/pr-analyzer.py`](code-reviewer/scripts/pr-analyzer.py) (`git diff main...HEAD | python references/code-reviewer/scripts/pr-analyzer.py`) to triage complexity and get a suggested review approach before reading.
 
 ### Phase 2: High-Level Review (5-10 minutes)
 
@@ -199,6 +199,7 @@ Use labels to indicate priority:
 | **Go** | [Go Guide](code-reviewer/reference/go.md) | 错误处理, goroutine/channel, context, 接口设计 |
 | **Kotlin / Android** | [Kotlin Guide](code-reviewer/reference/kotlin.md) | 协程, Flow, Jetpack Compose, 空安全, 内存泄漏, 架构模式 |
 | **Swift / SwiftUI** | [Swift Guide](code-reviewer/reference/swift.md) | Optionals, Swift Concurrency, Sendable/actors, SwiftUI property wrappers, value vs reference types, API design |
+| **Dart / Flutter** | [Dart Guide](code-reviewer/reference/dart.md) | Widget rebuilds, const constructors, null safety, isolates, async in build, Riverpod/Bloc, platform channels, keys, disposal |
 | **NestJS** | [NestJS Guide](code-reviewer/reference/nestjs.md) | 依赖注入, 分层架构, DTO 验证, Guard/Interceptor, 循环依赖 |
 | **Svelte / SvelteKit** | [Svelte Guide](code-reviewer/reference/svelte.md) | Runes, Load 函数, Form Actions, Store 迁移, SSR/CSR 边界 |
 | **C** | [C Guide](code-reviewer/reference/c.md) | 指针/缓冲区, 内存安全, UB, 安全编码, 可移植性, 测试 |

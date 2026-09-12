@@ -66,12 +66,12 @@
 
 | 来源 | 固定提交 | 本地内容 |
 |---|---|---|
-| `obra/superpowers` | `44c9b2d6e889982ac18c27d05a19fefe335194e1` | brainstorming、计划、TDD、并行、审查、验证和收尾 |
-| `mattpocock/skills` | `6acc160e4e0cd062dbbbd7a1b26ae92855edf07e` | grill-me、grilling、grill-with-docs、domain-modeling 和格式 |
-| `mattpocock/skills`（diagnosing-bugs 独立快照） | `6acc160e4e0cd062dbbbd7a1b26ae92855edf07e` | diagnosing-bugs 正文、HITL 循环脚本模板和上游界面元数据 |
-| `Panniantong/Agent-Reach` | `1221ecd0c3e0502ee37406f03543bedf7503f2c7` | 调研路由、七类详细参考和金融行情边界 |
+| `obra/superpowers` | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | brainstorming、计划、TDD、并行、审查、验证和收尾 |
+| `mattpocock/skills` | `3cca18b368ae95cdbdebbff572ccafa662551015` | grill-me、grilling、grill-with-docs、domain-modeling 和格式 |
+| `mattpocock/skills`（diagnosing-bugs 独立快照） | `3cca18b368ae95cdbdebbff572ccafa662551015` | diagnosing-bugs 正文、HITL 循环脚本模板和上游界面元数据 |
+| `Panniantong/Agent-Reach` | `da5044d26fc6adddb6554d5679c94ac22e76e428` | 调研路由、七类详细参考和金融行情边界 |
 | `Haaaiawd/Nexus-skills` | `09d5601ea8be34a83b54b8d48e24f0b6700cf403` | nexus-mapper 正文、协议、Schema 和脚本 |
-| `DietrichGebert/ponytail` | `16f29800fd2681bdf24f3eb4ccffe38be3baec6b` | ponytail 与 ponytail-review |
-| `awesome-skills/code-review-skill` | `95c707b999295f6c8ee2d0d3d1c61cc0c2e1a52c` | 完整代码审查入口、语言指南、资产和脚本 |
+| `DietrichGebert/ponytail` | `2ed6c52c9d7e5e56942508591085fd45dea277d3` | ponytail 与 ponytail-review |
+| `awesome-skills/code-review-skill` | `277f4793018448eb08289bd54ab3c0e241a02b7b` | 完整代码审查入口、语言指南、资产和脚本 |
 | `multica-ai/andrej-karpathy-skills` | `2c606141936f1eeef17fa3043a72095b4765b9c2` | karpathy-guidelines |
-| `obra/the-elements-of-style` | `6099c505c2a8eb066f3777f83a97d9d828f7954c` | writing-clearly-and-concisely 与完整写作参考 |
+| `obra/the-elements-of-style` | `05fc4f0d2b97b7c042dd9949ad658568e4a1324e` | writing-clearly-and-concisely 与完整写作参考 |

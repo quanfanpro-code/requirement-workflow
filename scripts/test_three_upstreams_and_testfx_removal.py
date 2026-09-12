@@ -12,16 +12,16 @@ REFERENCES_ROOT = SKILL_ROOT / "references"
 
 EXPECTED_SOURCES = {
     "obra-superpowers": (
-        "44c9b2d6e889982ac18c27d05a19fefe335194e1",
-        "4be45bea8eac905ff83de80583aff8e8339cba865e50410ce37ee65828e7c234",
+        "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+        "4d0163566c2e1796b1d4d4089eadc4921500df7734a73e237b6ba9708abd95df",
     ),
     "mattpocock-skills": (
-        "6acc160e4e0cd062dbbbd7a1b26ae92855edf07e",
-        "bad07f3098f09854b822c5c38020c9eada76897910ee198ca8a311937cd905ea",
+        "3cca18b368ae95cdbdebbff572ccafa662551015",
+        "e14525bd498884d5cb03326c506766409378cd02b02010a316e3fd787197c0f8",
     ),
     "agent-reach": (
-        "1221ecd0c3e0502ee37406f03543bedf7503f2c7",
-        "ddf84ced300ffac533076b063e0bac3f3e48ccad4c089795ea29164d92aecee5",
+        "da5044d26fc6adddb6554d5679c94ac22e76e428",
+        "515c6a093fedb0bc6692eabc52a5f97b3bf8b3a9f8e482c840b98dd4a05b3287",
     ),
 }
 

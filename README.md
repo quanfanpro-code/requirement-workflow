@@ -257,6 +257,13 @@ requirement-workflow/
 
 仓库地址、分支、固定提交号、来源目录、快照校验值、本地文件清单和适配说明，都记录在 `references/SOURCES.json`；本地依赖关系记录在 `references/DEPENDENCY-MAP.md`。升级后再运行 `python scripts/validate_bundle.py` 和集成测试，就能确认自包含关系没有断。
 
+### 2026-09-04 维护记录
+
+- 逐项检查 9 个登记来源并更新 7 个落后的固定提交；`nexus-skills` 和 `karpathy-skills` 已是最新。
+- 合并 Obra 的流程分级、计划溯源、执行台账和安全收尾改进；本工作流继续固定执行完整六阶段，不因上游的 Spike 或 Bounded 路径缩减流程。
+- 更新 Matt Pocock 的领域建模、复杂故障诊断和 HITL 模板，同时保留一次只问一个问题、子代理必须先获用户授权等本地边界。
+- 更新代码审查参考库及新增语言/跨领域检查项；Agent Reach、Ponytail 和 Elements of Style 本轮只更新来源固定提交，所跟踪正文没有变化。
+
 ### 2026-08-06 维护记录
 
 - 更新 `obra-superpowers`、`mattpocock-skills` 和 `agent-reach` 三个来源；其中 Agent Reach 新增雪球/股票行情参考 `agent-reach/finance.md`。
