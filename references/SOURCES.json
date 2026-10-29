@@ -124,7 +124,8 @@
         "将 CONTEXT-FORMAT.md 与 ADR-FORMAT.md 链接改为根级本地文件",
         "保留四个上游 agents/openai.yaml 作为非运行时维护元数据",
         "吸收新版设计树和前沿排序，但适配为每次只问一个关键问题",
-        "事实由当前实例优先使用工具核验，子代理必须先获用户明确授权"
+        "事实由当前实例优先使用工具核验，子代理必须先获用户明确授权",
+        "2026-09-18：提问前交代完整上下文、具体场景、已核实依据和决策原因；选项说明结果影响、代价、风险及推荐理由；用户质疑前提时先解释或补查，不以未经验证的假设迫使取舍"
       ]
     },
     {
@@ -273,5 +274,121 @@
         "将 elements-of-style.md 路径改为本包内子目录"
       ]
     }
-  ]
+  ],
+  "last_upstream_check": {
+    "checked_at": "2026-10-15T14:18:57+08:00",
+    "policy": "只核验与留痕；保留本地适配，未将检查结果冒充已合并基线",
+    "sources": [
+      {
+        "id": "obra-superpowers",
+        "repository": "obra/superpowers",
+        "pinned": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+        "latest": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+        "changed_paths": [
+          "M\tskills/brainstorming/SKILL.md",
+          "A\tskills/brainstorming/builder-check-prompt.md",
+          "M\tskills/brainstorming/scripts/server.cjs",
+          "D\tskills/brainstorming/spec-document-reviewer-prompt.md",
+          "M\tskills/brainstorming/visual-companion.md",
+          "M\tskills/executing-plans/SKILL.md",
+          "A\tskills/executing-plans/scripts/task-done",
+          "A\tskills/executing-plans/scripts/task-start",
+          "M\tskills/requesting-code-review/SKILL.md",
+          "M\tskills/requesting-code-review/code-reviewer.md",
+          "M\tskills/subagent-driven-development/SKILL.md",
+          "M\tskills/subagent-driven-development/re-review-prompt.md",
+          "M\tskills/subagent-driven-development/scripts/review-package",
+          "M\tskills/subagent-driven-development/scripts/sdd-workspace",
+          "M\tskills/subagent-driven-development/scripts/task-brief",
+          "M\tskills/subagent-driven-development/task-reviewer-prompt.md",
+          "M\tskills/test-driven-development/SKILL.md",
+          "A\tskills/using-superpowers/references/claude-code-tools.md",
+          "A\tskills/using-superpowers/references/muse-tools.md",
+          "M\tskills/writing-plans/SKILL.md",
+          "D\tskills/writing-plans/plan-document-reviewer-prompt.md",
+          "M\tskills/writing-skills/SKILL.md"
+        ],
+        "status": "checked_local_adaptations_preserved"
+      },
+      {
+        "id": "mattpocock-skills",
+        "repository": "mattpocock/skills",
+        "pinned": "3cca18b368ae95cdbdebbff572ccafa662551015",
+        "latest": "49dd158d1076134a641b33efb035946536778336",
+        "changed_paths": [
+          "R070\tskills/engineering/domain-modeling/CONTEXT-FORMAT.md\tskills/engineering/domain-modeling/GLOSSARY-FORMAT.md",
+          "M\tskills/engineering/domain-modeling/SKILL.md",
+          "M\tskills/productivity/grilling/SKILL.md"
+        ],
+        "status": "checked_local_adaptations_preserved"
+      },
+      {
+        "id": "mattpocock-diagnosing-bugs",
+        "repository": "mattpocock/skills",
+        "pinned": "3cca18b368ae95cdbdebbff572ccafa662551015",
+        "latest": "49dd158d1076134a641b33efb035946536778336",
+        "changed_paths": [
+          "M\tskills/engineering/diagnosing-bugs/SKILL.md"
+        ],
+        "status": "checked_local_adaptations_preserved"
+      },
+      {
+        "id": "agent-reach",
+        "repository": "Panniantong/Agent-Reach",
+        "pinned": "da5044d26fc6adddb6554d5679c94ac22e76e428",
+        "latest": "94f06c1969dfc1834001269d79d3ad0972d9dee6",
+        "changed_paths": [
+          "M\tagent_reach/skill/SKILL.md",
+          "M\tagent_reach/skill/SKILL_en.md",
+          "M\tagent_reach/skill/references/career.md"
+        ],
+        "status": "checked_local_adaptations_preserved"
+      },
+      {
+        "id": "nexus-skills",
+        "repository": "Haaaiawd/Nexus-skills",
+        "pinned": "09d5601ea8be34a83b54b8d48e24f0b6700cf403",
+        "latest": "09d5601ea8be34a83b54b8d48e24f0b6700cf403",
+        "changed_paths": [],
+        "status": "tracked_upstream_paths_current"
+      },
+      {
+        "id": "ponytail",
+        "repository": "DietrichGebert/ponytail",
+        "pinned": "2ed6c52c9d7e5e56942508591085fd45dea277d3",
+        "latest": "84740e3d344b69b4a133201fa519eb37a62a2b2a",
+        "changed_paths": [
+          "M\tskills/ponytail-review/SKILL.md",
+          "M\tskills/ponytail/SKILL.md"
+        ],
+        "status": "checked_local_adaptations_preserved"
+      },
+      {
+        "id": "code-review-skill",
+        "repository": "awesome-skills/code-review-skill",
+        "pinned": "277f4793018448eb08289bd54ab3c0e241a02b7b",
+        "latest": "4850184dfd7765ea7b3c5c4e9b6cf8e0815ee7cb",
+        "changed_paths": [
+          "M\tSKILL.md"
+        ],
+        "status": "checked_local_adaptations_preserved"
+      },
+      {
+        "id": "karpathy-skills",
+        "repository": "multica-ai/andrej-karpathy-skills",
+        "pinned": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+        "latest": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+        "changed_paths": [],
+        "status": "tracked_upstream_paths_current"
+      },
+      {
+        "id": "elements-of-style",
+        "repository": "obra/the-elements-of-style",
+        "pinned": "05fc4f0d2b97b7c042dd9949ad658568e4a1324e",
+        "latest": "05fc4f0d2b97b7c042dd9949ad658568e4a1324e",
+        "changed_paths": [],
+        "status": "tracked_upstream_paths_current"
+      }
+    ]
+  }
 }
