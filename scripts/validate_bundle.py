@@ -242,7 +242,7 @@ def check_orchestrator_policy() -> list[str]:
         "无法由当前证据立即解释",
         "正常的 TDD 红灯",
         "回到当前 TDD 任务的 VERIFY",
-        "不得提交、推送、创建 PR、合并、删除分支",
+        "不得创建 PR、合并、删除分支、删除工作区",
     )
     for literal in required_literals:
         if literal not in skill_text:
